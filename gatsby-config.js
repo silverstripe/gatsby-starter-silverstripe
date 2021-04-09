@@ -18,7 +18,7 @@ module.exports = {
       },
     },
     {
-      resolve: path.resolve(__dirname, `../gatsby-source-silverstripe`),
+      resolve: `gatsby-source-silverstripe`,
       options: {
         baseUrl: process.env.SILVERSTRIPE_CMS_BASE_URL,
         apiKey: process.env.SILVERSTRIPE_CMS_API_KEY,
