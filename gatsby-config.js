@@ -5,7 +5,6 @@ module.exports = {
   flags: {
     PRESERVE_WEBPACK_CACHE: true,
     FAST_DEV: true,
-    DEV_SSR: true,
   },
   siteMetadata: {
     title: `Gatsby/Silverstripe CMS POC`,
