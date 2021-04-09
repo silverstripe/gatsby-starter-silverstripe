@@ -2,6 +2,11 @@ const path = require('path');
 require(`dotenv`).config();
 
 module.exports = {
+  flags: {
+    PRESERVE_WEBPACK_CACHE: true,
+    FAST_DEV: true,
+    DEV_SSR: true,
+  },
   siteMetadata: {
     title: `Gatsby/Silverstripe CMS POC`,
     description: `Gatsby + Silverstripe CMS using GraphQL 4`,
@@ -22,6 +27,8 @@ module.exports = {
       options: {
         baseUrl: process.env.SILVERSTRIPE_CMS_BASE_URL,
         apiKey: process.env.SILVERSTRIPE_CMS_API_KEY,
+        stage: process.env.SILVERSTRIPE_STAGE,
+        forceRefresh: process.env.SILVERSTRIPE_FORCE_REFRESH,
         concurrentRequests: 5,
         batchSize: 300,
       }
