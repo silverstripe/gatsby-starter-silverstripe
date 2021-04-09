@@ -28,10 +28,8 @@
   ],
   "license": "0BSD",
   "scripts": {
-    "build": "gatsby build",
     "develop": "GATSBY_GRAPHQL_IDE=playground ENABLE_GATSBY_REFRESH_ENDPOINT=1 gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
