@@ -5968,9 +5968,9 @@ gatsby-source-filesystem@^3.0.0:
     xstate "^4.14.0"
 
 gatsby-source-silverstripe@^0.2:
-  version "0.2.3"
-  resolved "https://registry.yarnpkg.com/gatsby-source-silverstripe/-/gatsby-source-silverstripe-0.2.3.tgz#56e761cc1c8d93af8302f7aaa045f9569bb590bc"
-  integrity sha512-RXF0mAcG6MApCr0du2bQwPY78Ut5qfZ1a0HzQvkv7Mluw4hgaaHKLlUbSIUCyWxhCH34iWY9MAJcgAKPybQN1Q==
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/gatsby-source-silverstripe/-/gatsby-source-silverstripe-0.2.4.tgz#f1e0cf7e103efa839245abded1c84ff8fbe086eb"
+  integrity sha512-okC3t5HY2eTB4ngUy4ibOkxx1OSXiEEF7EKo7GnKEAbQWVl8+IBCOjuCxsnQi0z+4LCsryx5oJ9tnZsCxi46iQ==
   dependencies:
     chalk "^4.1.0"
     dotenv "^8.2.0"

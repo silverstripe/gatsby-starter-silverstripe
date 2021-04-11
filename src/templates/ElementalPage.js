@@ -23,7 +23,7 @@ export const query = graphql`
         title
         content
         elementalArea {
-          elements {
+          elements(sort: { order: ASC, fields: [sort] }) {
             ... on SS_BaseElementInterface {
               title
               id
