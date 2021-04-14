@@ -34,6 +34,16 @@ module.exports = {
         batchSize: 300,
       }
     },
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: false,
+        develop: true,
+        ignore: [], // Ignore files/folders
+        purgeCSSOptions: {          // https://purgecss.com/configuration.html#options
+        },
+      },
+    },    
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-gatsby-cloud`,
