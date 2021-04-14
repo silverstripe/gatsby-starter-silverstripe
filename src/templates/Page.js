@@ -1,22 +1,79 @@
 import * as React from "react"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import { graphql } from 'gatsby';
-import Menu from "../components/Menu";
+import SidebarNav from "../components/SidebarNav";
+import Breadcrumbs from "../components/Breadcrumbs";
+import ElementalArea from "../elements/ElementalArea";
+import PageLayout from "../layouts/PageLayout";
 
-const Page = ({ data: { ssSiteTreeInterface: { title, content} }}) => (
-  <div>
-    <SEO title={title} />
-    <Menu />
-    <h1>{title} (Page)</h1>
-    <div dangerouslySetInnerHTML={{__html: content}} />
-  </div>
-)
+const Page = ({
+  data: {
+    ssPage: {
+      title,
+      content,
+      childNodes,
+      breadcrumbs,
+      elementalArea 
+    } 
+  }
+}) => (
+  <PageLayout>
+    <div className="container"> 
+      <SEO title={title} />
+      <div className="row">
+          <section className={childNodes.length > 0 ? `col-lg-12` : `col-lg-8 offset-lg-2`}>
+              <header className="page-header">
+                  <Breadcrumbs breadcrumbs={breadcrumbs} />
+                  <h1>{title}</h1>
+              </header>
+          </section>
+      </div>
+      <div className="row">
+          <section className={`col-lg-8 ${!childNodes.length ? `offset-lg-2` : ``}`}>
+            <div dangerouslySetInnerHTML={{__html: content }} />
+            {elementalArea && <ElementalArea elements={elementalArea.elements} />}
+          </section>
+          {(childNodes.length > 0) &&
+            <aside className="col-lg-3 offset-lg-1">
+              <SidebarNav pages={childNodes} />
+            </aside>
+      
+          }
+      </div>
+    </div>
+  </PageLayout>
+);
 
 export const query = graphql`
   query($id: String!) {
-    ssSiteTreeInterface( id: {eq: $id }) {
+    ssPage( id: {eq: $id }) {
         title
         content
+        childNodes {
+          ... on SS_SiteTreeInterface {
+            id
+          }
+        }
+        breadcrumbs {
+          id
+          menuTitle
+          link
+        }
+        
+        # If using elemental, uncomment this
+        
+        # elementalArea {
+        #   elements {
+        #      ... on SS_BaseElementInterface {
+        #        id
+        #        showTitle              
+        #        title
+        #      }
+        #      ... on SS_ElementContent {
+        #        html
+        #      }
+        #   }
+        # }
     }
   }
 `;

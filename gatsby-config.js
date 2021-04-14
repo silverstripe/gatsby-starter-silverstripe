@@ -12,6 +12,8 @@ module.exports = {
     author: `Uncle Cheese`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
