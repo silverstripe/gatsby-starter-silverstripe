@@ -29,7 +29,7 @@ const ProductPage = ({
                     return (
                       <div key={product.id}>
                         <h3>{product.title} ${product.price}</h3>
-                        <GatsbyImage image={image} alt="image" />
+                        {image && <GatsbyImage image={image} alt="image" />}
                       </div>
                     );
                   })}
