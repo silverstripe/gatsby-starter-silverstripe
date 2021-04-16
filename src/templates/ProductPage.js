@@ -23,6 +23,7 @@ const ProductPage = ({
               <header className="page-header">
                   <Breadcrumbs breadcrumbs={breadcrumbs} />
                   <h1>{title}</h1>
+                  <div dangerouslySetInnerHTML={{ __html: content }} />
                   {products.map(product => {
                     const image = getImage(product.image.localFile);
                     return (

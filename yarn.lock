@@ -1896,9 +1896,9 @@
     form-data "^3.0.0"
 
 "@types/node@*":
-  version "14.14.39"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.39.tgz#9ef394d4eb52953d2890e4839393c309aa25d2d1"
-  integrity sha512-Qipn7rfTxGEDqZiezH+wxqWYR8vcXq5LRpZrETD19Gs4o8LbklbmqotSUsMU+s5G3PJwMRDfNEYoxrcBwIxOuw==
+  version "14.14.41"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.41.tgz#d0b939d94c1d7bd53d04824af45f1139b8c45615"
+  integrity sha512-dueRKfaJL4RTtSa7bWeTK1M+VH+Gns73oCgzvYfHZywRCoPSd8EkXBL0mZ9unPTveBn+D9phZBaxuzpwjWkW0g==
 
 "@types/node@^14.14.10":
   version "14.14.31"
@@ -6137,9 +6137,9 @@ gatsby-source-filesystem@^3.3.0:
     xstate "^4.14.0"
 
 gatsby-source-silverstripe@^0.2:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/gatsby-source-silverstripe/-/gatsby-source-silverstripe-0.2.7.tgz#593b356186b838fe16db5a488cab98c2d70a04b1"
-  integrity sha512-cciVRLPaERkUN15MwdZY8zPeTnJ43Z+wVlSh5M4UgAIXIl5RjVLHd7pj1gSe5AlV25evik6mwa8STTP3RoEzZg==
+  version "0.2.9"
+  resolved "https://registry.yarnpkg.com/gatsby-source-silverstripe/-/gatsby-source-silverstripe-0.2.9.tgz#09efee17064831cdf1e776b36823b93ba5f4a83c"
+  integrity sha512-xsOF2GDI80Uvd3c1MTvQDNOPxT9H+5GCmgL/L/a2DhwpW8BOTAuZQidDpfTrItJUp/2ArZzQ8bwpzaONDdv4Wg==
   dependencies:
     chalk "^4.1.0"
     dotenv "^8.2.0"
