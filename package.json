@@ -21,7 +21,7 @@
     "gatsby-plugin-sass": "^4.2.0",
     "gatsby-plugin-sharp": "^3.0.0",
     "gatsby-source-filesystem": "^3.0.0",
-    "gatsby-source-silverstripe": "^0.2",
+    "gatsby-source-silverstripe": "silverstripe/gatsby-source-silverstripe#master",
     "gatsby-transformer-sharp": "^3.0.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
@@ -30,6 +30,8 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
+    "chalk": "^4.1.0",
+    "inquirer": "^8.0.0",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -37,7 +39,9 @@
   ],
   "license": "0BSD",
   "scripts": {
+    "setup": "node ./bin/setup.js",
     "develop": "GATSBY_GRAPHQL_IDE=playground ENABLE_GATSBY_REFRESH_ENDPOINT=1 gatsby develop",
+    "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
