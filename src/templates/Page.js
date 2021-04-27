@@ -67,6 +67,7 @@ export const query = graphql`
         # elementalArea {
         #   elements {
         #      ... on SS_BaseElementInterface {
+        #        __typename
         #        id
         #        showTitle              
         #        title

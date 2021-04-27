@@ -2,11 +2,15 @@ import React from 'react';
 import ElementContent from './ElementContent';
 
 // Todo: Support dynamic element components 
-const ElementalArea = ({ elementalArea }) => {
+const ElementalArea = ({ elements }) => {
     return (
-        elementalArea.elements.map(element => {
+        elements.map(element => {
             return (
-                <ElementContent key={element.id} element={element} />
+                <div key={element.id}>
+                    <h3>{element.__typename}</h3>
+                    <ElementContent element={element} />
+                </div>
+                
             )
         })
     )
