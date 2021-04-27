@@ -7,9 +7,9 @@ module.exports = {
     FAST_DEV: true,
   },
   siteMetadata: {
-    title: `Gatsby/Silverstripe CMS POC`,
-    description: `Gatsby + Silverstripe CMS using GraphQL 4`,
-    author: `Uncle Cheese`,
+    title: `My Silverstripe CMS + Gatsby website`,
+    description: ``,
+    author: ``,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -38,9 +38,11 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: false,
-        develop: true,
-        ignore: [], // Ignore files/folders
-        purgeCSSOptions: {          // https://purgecss.com/configuration.html#options
+        develop: false,
+         // Ignore files/folders
+        ignore: [],
+        // https://purgecss.com/configuration.html#options
+        purgeCSSOptions: {
         },
       },
     },    

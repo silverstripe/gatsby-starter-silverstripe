@@ -52,6 +52,8 @@ export const query = graphql`
         childNodes {
           ... on SS_SiteTreeInterface {
             id
+            menuTitle
+            link
           }
         }
         breadcrumbs {
