@@ -1,7 +1,7 @@
 import * as React from "react"
-import SEO from "../components/SEO"
 import { graphql } from 'gatsby';
 import PageLayout from "../layouts/PageLayout";
+import MetaTags from "../components/MetaTags";
 
 const HomePage = ({
   data: {
@@ -12,7 +12,7 @@ const HomePage = ({
   }
 }) => (
   <PageLayout>
-    <SEO title={title} />
+    <MetaTags title={title} />
     <div className="home-page">
         <div className="jumbotron">
         <div className="container text-center">

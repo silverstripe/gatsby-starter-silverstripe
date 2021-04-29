@@ -1,10 +1,10 @@
 import * as React from "react"
-import SEO from "../components/SEO"
 import { graphql } from 'gatsby';
 import SidebarNav from "../components/SidebarNav";
 import Breadcrumbs from "../components/Breadcrumbs";
 import ElementalArea from "../elements/ElementalArea";
 import PageLayout from "../layouts/PageLayout";
+import MetaTags from "../components/MetaTags";
 
 const Page = ({
   data: {
@@ -19,7 +19,7 @@ const Page = ({
 }) => (
   <PageLayout>
     <div className="container"> 
-      <SEO title={title} />
+      <MetaTags title={title} />
       <div className="row">
           <section className={childNodes.length > 0 ? `col-lg-12` : `col-lg-8 offset-lg-2`}>
               <header className="page-header">
