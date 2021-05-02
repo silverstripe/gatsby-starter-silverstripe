@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
+    "@types/react-helmet": "^6.1.1",
     "bootstrap": "^4.6.0",
     "gatsby": "^3.4.0",
     "gatsby-plugin-fontawesome-css": "^1.1.0",
@@ -26,12 +27,12 @@
     "gatsby-source-filesystem": "^3.0.0",
     "gatsby-source-silverstripe": "^0.3",
     "gatsby-transformer-sharp": "^3.0.0",
+    "got": "^11",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.8",
-    "got": "^11"
+    "sass": "^1.32.8"
   },
   "devDependencies": {
     "chalk": "^4.1.0",
