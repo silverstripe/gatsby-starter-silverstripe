@@ -28,6 +28,8 @@
     "gatsby-source-silverstripe": "^0.3",
     "gatsby-transformer-sharp": "^3.0.0",
     "got": "^11",
+    "netlify-plugin-gatsby-cache": "^0.3.2",
+    "netlify-plugin-silverstripe-cache": "^0.1.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

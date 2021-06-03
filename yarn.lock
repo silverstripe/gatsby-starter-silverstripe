@@ -8987,6 +8987,16 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
+netlify-plugin-gatsby-cache@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-gatsby-cache/-/netlify-plugin-gatsby-cache-0.3.2.tgz#f2b89c220ef7a525ce4eaac46f828507cc8f8eff"
+  integrity sha512-Ssj2af0DliY70u8MmkDN25cpDk2/jW1aVZxPdljdm17oNwAIQcB17BF86RlW0ikdQ94KGHfaJymjVUZM7K3hPA==
+
+netlify-plugin-silverstripe-cache@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/netlify-plugin-silverstripe-cache/-/netlify-plugin-silverstripe-cache-0.1.0.tgz#d338a89862b178b720606beadc2cc53061893a60"
+  integrity sha512-4AuUcxRAy1txr7vfxclah/DnAmJ77zYcTLhm/OwvUThRnkKMGt+SSszZtVSYicQKtMuhOnu4TNB6jeNWUFfVkQ==
+
 next-tick@1, next-tick@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.1.0.tgz#1836ee30ad56d67ef281b22bd199f709449b35eb"
